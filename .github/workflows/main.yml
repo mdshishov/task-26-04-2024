@@ -4,5 +4,7 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
+      - name: install
+        run: npm ci
       - name: my-step
         run: npx jest
